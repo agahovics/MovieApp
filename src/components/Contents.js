@@ -63,7 +63,6 @@ export const Contents = ({ searchKeyword }) => {
         </div>
         <div className="cards">
           {movies.map((x) => {
-            console.log(x.original_title);
             return (
               <a
                 href={`/movie/${x.original_title

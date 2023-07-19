@@ -11,8 +11,6 @@ function DetailMovie(props) {
   const [detail, setDetail] = useState(undefined);
 
   useEffect(() => {
-    console.log(id);
-
     if (id) {
       const options = {
         method: "GET",
@@ -30,8 +28,6 @@ function DetailMovie(props) {
         .catch((err) => console.error(err));
     }
   }, [router.query.id]);
-
-  console.log(detail);
 
   return (
     <>
