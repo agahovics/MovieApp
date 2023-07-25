@@ -39,7 +39,7 @@ function DetailMovie(props) {
       />
 
       <div className="p-4 shadow-2 border-round">
-        <div className="flex flex-row">
+        <div className="flex flex-column-reverse md:flex-row">
           <img
             src={`https://image.tmdb.org/t/p/w500${detail?.poster_path}`}
             alt=""

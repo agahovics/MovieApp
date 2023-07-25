@@ -61,7 +61,7 @@ export const Contents = ({ searchKeyword }) => {
         <div style={{ color: "white" }} className="cards-title">
           <h3>{searchKeyword ? "Search Results" : "Popular Movies"}</h3>
         </div>
-        <div className="cards">
+        <div className="grid-cards">
           {movies.map((x) => {
             return (
               <a

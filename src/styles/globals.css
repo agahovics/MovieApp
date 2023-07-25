@@ -164,6 +164,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .hero-space {
@@ -176,7 +177,7 @@ body {
 .hero-title {
   position: absolute;
   bottom: 250px;
-  left: 400px;
+  width: 100%;
 }
 
 .hero-space img {
@@ -193,6 +194,53 @@ body {
   --_i: 10%;
   filter: grayscale(0);
 }
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  place-items: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hero-title {
+    position: relative;
+    bottom: 0;
+  }
+  .hero-title h2 {
+    font-size: 30px !important;
+  }
+
+  .hero-title p {
+    padding: 40px;
+    font-size: 24px !important;
+  }
+
+  .hero-space img {
+    display: none ;
+  }
+
+  
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1200px)  {
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+
+
+
 
 .contents {
   text-align: center;

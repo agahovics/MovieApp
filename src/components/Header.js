@@ -35,8 +35,8 @@ export const Header = (props) => {
 
   return (
     <>
-      <div className="navbar">
-        <a href="http://localhost:3000" style={{ textDecoration: "none" }}>
+      <div className="navbar flex-column md:flex-row">
+        <a href="http://localhost:3000" style={{ textDecoration: "none"}}>
           <h1
             style={{
               filter: "drop-shadow(8px 5px 5px blue)",
